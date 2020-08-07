@@ -1,0 +1,36 @@
+article {
+    float: left;
+  }
+  
+  article:not(:last-child) {
+    margin-right: 1%;
+  }
+  
+  [class*="col-"]:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+.col-1 > article{
+    width: calc(100% / 1);
+}
+
+.col-2 > article{
+    width: calc(100% / 2.1);
+}
+
+.col-3 > article{
+    width: calc(100% / 3.5);
+}
+
+.col-4 > article{
+    width: calc(100% / 4.2);
+}
+
+
+@media only screen and (max-width: 400px) {
+    [class*="col-"] > article{
+        width: calc(100% / 1);
+    }
+  }
