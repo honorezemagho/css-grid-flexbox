@@ -1,0 +1,30 @@
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col-1{
+    flex: 0 0 20%;
+}
+
+.col-2{
+    flex: 0 0 44%;
+}
+
+.col-3{
+    flex: 0 0 68%;
+}
+
+.col-4{
+    flex: 0 0 92%;
+}
+
+[class*="col-"]{
+    margin: 0 2%;
+}
+
+@media only screen and (max-width: 480px) {
+    [class*="col"]{
+        flex: 0 0 92%;
+    }
+  }
