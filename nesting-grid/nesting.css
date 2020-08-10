@@ -24,6 +24,29 @@ article aside {
 	padding: 0.5em;
 	border-radius: 0.5em;
 }
+
+.nested{
+	display: grid;
+	grid-template-rows: auto;
+	grid-gap: 1em;
+	grid-template-areas: 
+	"aside1 aside2 aside3";
+
+}
+
+.nested aside:first-child{
+	grid-area: aside1;
+}
+
+
+.nested aside:nth-child(2){
+	grid-area: aside2;
+}
+
+.nested aside:last-child{
+	grid-area: aside3;
+}
+
 @media (min-width: 650px) { 
 	header {
 		grid-column: 1 / 2;
