@@ -11,10 +11,31 @@ body {
 }
 ul {
 	margin: 0;
-	padding: 0;
 	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 5px;
 }
-@media (min-width: 550px) {
+
+li{
+	margin: 5px;
+	width: 22%;
+	padding: 5px;
 }
-@media (min-width: 850px) { 
+
+
+@media (max-width: 750px) {
+	li{
+		margin: 5px;
+		width: 98%;
+		padding: 5px;
+	}
+}
+@media (min-width: 1200px) { 
+	li{
+		margin: 6px;
+		width: 20%;
+	}
 }
