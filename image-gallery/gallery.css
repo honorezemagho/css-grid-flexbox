@@ -25,6 +25,11 @@ li{
 	padding: 5px;
 }
 
+img{
+	margin: 10px;
+	max-width: 23vw;
+}
+
 
 @media (max-width: 750px) {
 	li{
@@ -32,10 +37,20 @@ li{
 		width: 98%;
 		padding: 5px;
 	}
+
+	img{
+		margin: 10px;
+		max-width: 75vw;
+	}
 }
 @media (min-width: 1200px) { 
 	li{
 		margin: 6px;
 		width: 20%;
+	}
+
+	img{
+		margin: 10px;
+		max-width: 50vw;
 	}
 }
